@@ -22,7 +22,7 @@ jobs:
      run: pip install -r requirements.txt
    
    - name: Exeute Notebook 
-     run: jupyter-nbconvert --execute Sonya.ipynb --to html
+     run: jupyter-notebook --execute Sonya.ipynb --to html
 
    - name: Upload a Build Artifact 
      uses: actions/upload-artifact@v3.1.0
