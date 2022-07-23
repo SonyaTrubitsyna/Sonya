@@ -1,17 +1,10 @@
-jobs:
-build:
-docker:
-- image: circleci/python:3.6.4
-steps:
-- checkout    
-- run: sudo pip install jupyter_client
-- run: sudo pip install nbconvert
-- run: sudo pip install numpy
-- run: sudo pip install matplotlib
-- run: sudo pip install sklearn
-- run: sudo python3 -m pip install ipykernel
-- run: sudo python3 -m ipykernel install --user
-- run: jupyter-nbconvert --execute ./Notebook.ipynb
-- store_artifacts:
-path: ./Notebook.html
-destination: Notebook.html
+BeautifulSoup==3.2.0
+Django==1.3
+Fabric==1.2.0
+Jinja2==2.5.5
+PyYAML==3.09
+Pygments==1.4
+SQLAlchemy==0.7.1
+South==0.7.3
+amqplib==0.6.1
+anyjson==0.3
